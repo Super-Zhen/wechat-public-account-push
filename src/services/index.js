@@ -551,6 +551,7 @@ export const getAggregatedData = async () => {
     content: noteEn = DEFAULT_OUTPUT.noteEn,
     note: noteCh = DEFAULT_OUTPUT.noteCh
   } = await getCIBA()
+  console.table([{"content":noteEn,note:noteCh}])
   // 获取每日一言
   const {
     hitokoto: oneTalk = DEFAULT_OUTPUT.oneTalk,
