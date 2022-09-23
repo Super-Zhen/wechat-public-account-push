@@ -27,7 +27,7 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "okF0j5_PI20Nj0gXr76FKD_5wT-o",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "fBWN2JSHgbqGzm66vfbWmgBU7h-3R5GecA-ar3rSFg4",
+      useTemplateId: "kKFrXiYOSqUvP2csYAdfXPqYSKBxCfFLOo4KmnqFBqA",
       // 所在省份
       province: "北京",
       // 所在城市
@@ -41,20 +41,20 @@ export const config = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "老婆", "year": "1991", "date": "10-06"},
+        // {"type": "*生日", "name": "老婆", "year": "1991", "date": "10-06"},
         {"type": "节日", "name": "结婚纪念日", "year": "2021", "date": "11-20"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "老婆", "year": "1991", "date": "10-06"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+        {"type": "生日", "name": "老婆", "year": "1991", "date": "10-15"},
+        // {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
         {"keyword": "love_day", date: "2022-09-08"},
-        // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
-        // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
+        // // 结婚纪念日
+        {"keyword": "marry_day", date: "2021-11-20"},
+        // // 退伍日
+        // {"keyword": "ex_day", date: "2022-09-10"},
       ]
     }
     // 你可以不断按格式往下增加
@@ -96,14 +96,14 @@ export const config = {
   /**
    * 重要节日，修改名字为对应需要显示的名字, date 仅填月日即可, 请严格按照示例填写
    * type必须填！ 只能 “生日” 和 “节日” 二选一!
-   * 
+   *
    * --- 阴历配置开始 ---
    * 如果日期使用阴历，请在 “生日” 或 "节日“ 前添加 * 符号
    * --- 阴历配置结束 ---
-   * 
+   *
    * 生日时，name填写想要展示的名字，你可以填“美丽可爱亲亲老婆”
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
-   * 
+   *
    * --- 是否展示周岁信息开始 ---
    * isShowAge: true 展示岁数, 仅type为生日生效
    * isShowAge: false 不展示岁数, 仅type为生日生效
@@ -112,11 +112,11 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+    // {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
+    // {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+    // // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+    // {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
+    // {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
     // 你可以不断按格式往下增加
     // ...
   ],
